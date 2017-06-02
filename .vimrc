@@ -2,7 +2,7 @@
 set nocompatible
 set relativenumber "Line Numbers"
 set number
-colorscheme obsidian
+colorscheme ir_black
 syntax enable
 set tabstop=4
 set softtabstop=4
@@ -25,6 +25,7 @@ filetype plugin indent on
 
 " General Shortcuts
 let mapleader = "\<Space>""
+nnoremap <leader><leader> <C-^>
 inoremap jk <esc>
 nnoremap <leader>wj <C-W>j<C-W>
 nnoremap <leader>wk <C-W>k<C-W>
@@ -40,11 +41,12 @@ nnoremap <leader>ws :split<cr>
 nnoremap <leader>wv :vsplit<cr>
 nnoremap <leader>tag :CtrlPTag<cr>
 nnoremap <leader>tb :TagbarToggle<cr>
-nnoremap <leader>ww :NERDTree D:\svn<cr>
 nnoremap <leader>of :%:p
 nnoremap <leader>cd :cd /cygdrive/d/svn/<cr>
 nnoremap <leader>gt <C-]>
 nnoremap <leader>gb :bprev<cr>
+
+nnoremap <leader>ff :CtrlP<cr>
 
 " Copy and Paste remapping.
 nnoremap <C-v> "+p
